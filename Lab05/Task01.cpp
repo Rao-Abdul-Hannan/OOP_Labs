@@ -179,7 +179,7 @@ class Faculty
         cout << this -> id << "\t";
         cout << this -> firstName << "\t";
         cout << this -> lastName << "\t";
-        cout << this -> qualification << "\t";
+        cout << this -> qualification << "\t\t";
         cout << this -> salary << "\t";
 
         cout << endl;
@@ -244,5 +244,7 @@ int main()
 
     cout << faculty[1].isPostGraduate();
     cout << faculty[0].isPostGraduate();
+
+    delete [] faculty;
     return 0;
 }
